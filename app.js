@@ -26,6 +26,7 @@ app.use(passport.session());
 
 mongoose.connect("mongodb+srv://admin-sakshi:"+ (process.env.PASSWORD) +"@cluster1.haqtk.mongodb.net/userDB",{useNewUrlParser: true, useUnifiedTopology: true});
 mongoose.set("useCreateIndex", true);
+
 const userSchema = new mongoose.Schema ({
     email: String,
     password: String,
